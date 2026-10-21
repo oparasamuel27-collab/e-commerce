@@ -17,6 +17,11 @@
         --muted: #676767;
         --line: #e9e1d8;
         --soft: #f2efe9;
+        --page-inline: 18px;
+        --page-width: 1260px;
+        --section-gap: 90px;
+        --section-top: 30px;
+        --section-bottom: 52px;
       }
       * { box-sizing: border-box; }
       body {
@@ -39,9 +44,9 @@
       }
 
       .navbar {
-        max-width: 1240px;
+        max-width: var(--page-width);
         margin: 0 auto;
-        padding: 18px 18px 12px;
+        padding: 18px var(--page-inline) 12px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -86,13 +91,14 @@
       }
 
       .container {
-        max-width: 1240px;
+        max-width: var(--page-width);
         margin: 0 auto;
-        padding: 0 18px;
+        padding: 0 var(--page-inline);
       }
 
       .category-page {
-        padding: 28px 0 60px;
+        padding-top: var(--section-top);
+        padding-bottom: var(--section-bottom);
       }
 
       .category-hero {
@@ -146,7 +152,7 @@
       }
 
       .collection-block {
-        margin-top: 30px;
+        margin-top: var(--section-gap);
       }
 
       .collection-header {
@@ -282,9 +288,9 @@
       }
 
       .footer-inner {
-        max-width: 1240px;
+        max-width: var(--page-width);
         margin: 0 auto;
-        padding: 24px 18px 18px;
+        padding: 24px var(--page-inline) 18px;
       }
 
       .footer-top {
