@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klothink | Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <div class="auth-shell">
+      <aside class="auth-visual" aria-label="Brand introduction">
+        <div class="brand-mark">
+          <img src="images/logo/Logo.svg" alt="Klothink logo" />
+          <span>Klothink</span>
+        </div>
+
+        <div class="promo-panel">
+          <p class="eyebrow">Welcome back</p>
+          <h2>Shop smarter. Dress better.</h2>
+          <ul class="promo-list">
+            <li>Track your favorites and saved items</li>
+            <li>Unlock member pricing and early drops</li>
+            <li>Enjoy a faster checkout with your profile</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="auth-card">
+        <p class="auth-kicker">Welcome back</p>
+        <a href="index.html" class="auth-home-link" aria-label="Go to home page">Home</a>
+        <h1>Hello, I am Fachi</h1>
+        <p class="auth-subtitle">
+          A UI designer for fifteen years based in USA. Currently, I am working in
+          Google H.O, USA.
+        </p>
+        <p id="error-message" class="error-message" aria-live="polite"></p>
+
+        <form id="login-form" class="auth-form" novalidate>
+          <div class="auth-field">
+            <label for="email-input" aria-label="Email or username">
+              <span>@</span>
+            </label>
+            <input type="text" name="email" id="email-input" placeholder="Email or Username" />
+          </div>
+
+          <div class="auth-field">
+            <label for="password-input" aria-label="Password">
+              <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="currentColor"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm296.5-223.5Q560-327 560-360t-23.5-56.5Q513-440 480-440t-56.5 23.5Q400-393 400-360t23.5 56.5Q447-280 480-280t56.5-23.5ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
+            </label>
+            <input type="password" name="password" id="password-input" placeholder="Password" />
+          </div>
+
+          <button class="auth-submit" type="submit">Sign in</button>
+        </form>
+
+        <a href="forgotten-password.html" class="login-link">Forgot Password or User Name?</a>
+
+        <div class="social-row">
+          <span>Our social presence at:</span>
+          <div class="social-icons" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="X">X</a>
+          </div>
+        </div>
+
+        <p class="auth-switch">
+          Don’t have an account?
+          <a href="sign-up.html">Register now</a>
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
